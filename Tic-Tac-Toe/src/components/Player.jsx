@@ -11,7 +11,7 @@ function Player({ name, symbol }) {
     //let btnCaption = 'Edit';
 
     if(isEditing) {
-        playerName = <input type="text" required/>
+        playerName = <input type="text" required value={name}/>
         //btnCaption= "Save";
     }
 
