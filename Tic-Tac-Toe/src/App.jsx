@@ -8,7 +8,11 @@ import GameBoard from "./components/GameBoard.jsx";
 function App() {
   const [activePlayer, setActivePlayer] = useState('X');
 
-  ß
+  function handleSelectSquare() {
+    setActivePlayer((currPlayer) => {
+      currPlayer === 'X' ? 'O' : 'X';
+    });
+  }
 
   return (
     <main>
