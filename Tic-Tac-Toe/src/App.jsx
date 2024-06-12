@@ -1,7 +1,15 @@
+import { useState } from "react";
+
 import Player from "./components/Player";
 import GameBoard from "./components/GameBoard.jsx";
 
+
+
 function App() {
+  const [activePlayer, setActivePlayer] = useState('X');
+
+  ß
+
   return (
     <main>
       <div id="game-container">
