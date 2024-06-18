@@ -14,6 +14,7 @@ function GameBoard({ onSelectSquare, activePlayerSymbol }) {
             const updatedBoard = [...prevGameBoard].map((innerArr) => [...innerArr]);
             updatedBoard[rowIndex][colIndex] = activePlayerSymbol;
             return updatedBoard;
+            // updating the array in immutable way
         });
 
         onSelectSquare();
