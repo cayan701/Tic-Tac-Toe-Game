@@ -17,12 +17,12 @@ function App() {
 
   const gameBoard = initialGameBoard;
     
-   for(const turn of gameTurns) {
-      const { square, player } = turn;
-      const { row, col } = square;
+  for(const turn of gameTurns) {
+    const { square, player } = turn;
+    const { row, col } = square;
         
-      gameBoard[row][col] = player;
-    }  
+    gameBoard[row][col] = player;
+  }  
 
   function handleSelectSquare(rowIndex, colIndex) {
     setActivePlayer((currPlayer) => currPlayer === 'X' ? 'O' : 'X');
@@ -49,7 +49,7 @@ function App() {
           <Player initialName='Player 1' symbol='X' isActive={activePlayer === 'X'}/>
           <Player initialName='Player 2' symbol='O' isActive={activePlayer === 'O'}/>
         </ol>
-        <GameBoard onSelectSquare={handleSelectSquare} turns={gameTurns} />
+        <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
       </div>
 
       <Log turns={gameTurns} />
