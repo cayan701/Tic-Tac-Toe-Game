@@ -12,8 +12,8 @@ const initialGameBoard = [
 ];
 
 function App() {
-  const [activePlayer, setActivePlayer] = useState('X');
-  const [gameTurns, setGameTurns] = useState([]);
+  const [ activePlayer, setActivePlayer ] = useState('X');
+  const [ gameTurns, setGameTurns ] = useState([]);
 
   const gameBoard = initialGameBoard;
     
